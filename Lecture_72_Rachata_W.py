@@ -3,9 +3,9 @@ def showBill():
     sum = 0
     print(("---My Food---"))
     for number in range(len(menuList)):
-        print(menuList[number])
+        print(menuList[number][0], menuList[number][1])
         sum += int(menuList[number][1])
-        print("Total :", sum)
+    print("Total :", sum)
 while True:
     menuName = input("Please Enter Menu :")
     if(menuName.lower() == "exit"):
